@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+    <!-- <div id="nav-drawer">
+      <link rel="stylesheet" type="text/css" href="./style.css" />
+      <link rel="stylesheet" type="text/css" href="./tree-menu.css" />
+      <link rel="stylesheet" type="text/css" href="./card-style.css" />
+      <link rel="stylesheet" type="text/css" href="./button.css" />
+      <link rel="stylesheet" type="text/css" href="./menu.css" />
+
+      <script src="./jquery-1.8.3.min.js"></script>
+      <script src="./tree-menu.js"></script>
+
+      <input id="nav-input" type="checkbox" class="nav-unshown" />
+      <label id="nav-open" for="nav-input"><span></span></label>
+      <label class="nav-unshown" id="nav-close" for="nav-input"></label>
+
+      <div id="nav-content" class="menu-frame">
+        <ul id="nav-ul" class="tree-menu"></ul>
+        <div class="bottom-menu" style="display: inline-block; ">
+          <button
+            class="btn-flat-border"
+            style="text-align: center; "
+            id="addContents"
+          >
+            ADD CONTENTS
+          </button>
+        </div>
+      </div>
+    </div> -->
+  </head>
+
+  <body>
+    <header>
+      headder
+    </header>
+
+    <!-- コンテンツ -->
+    <div class="main-container">
+      <div class="left-sidebar">
+        <ul id="side-menu-ul"></ul>
+      </div>
+
+      <div class="maincol">
+        <table>
+          <thead>
+            <tr>
+              <th>title</th>
+              <th>pubDate</th>
+              <th>guid</th>
+            </tr>
+          </thead>
+          <tbody id="feed-list-body"></tbody>
+        </table>
+      </div>
+
+      <div class="right-sidebar">右サイドバー</div>
+    </div>
+
+    <footer>
+      fotter
+    </footer>
+  </body>
+  <script type="text/javascript" src="./dist/renderer.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/list.js/1.5.0/list.min.js"></script>
+</html>

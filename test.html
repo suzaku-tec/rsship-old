@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Hello Saga!</title>
+  </head>
+  <body>
+    <script>
+      class HelloSaga extends HTMLElement {
+        get hoge() {
+          return this.getAttribute("hoge");
+        }
+
+        set hoge(val) {
+          if (val) {
+            this.setAttribute("hoge", val);
+          } else {
+            this.removeAttribute("hoge");
+          }
+        }
+      }
+
+      window.customElements.define("hello-saga", HelloSaga);
+      document.body.appendChild(new HelloSaga());
+    </script>
+  </body>
+</html>

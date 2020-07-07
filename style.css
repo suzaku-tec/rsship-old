@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.main-container {
+  flex: 1;
+  background-color: #eee;
+  margin: 10px 0 10px 0;
+  display: flex;
+}
+
+.left-sidebar {
+  flex: 0 0 240px;
+  padding: 0;
+  background: #aec4e5;
+}
+.maincol {
+  flex: 1 1 auto;
+  padding: 0;
+  margin: 0 20px;
+  background: #eb8686;
+  /* overflow-y: scroll;
+  overflow-x: scroll; */
+  overflow: scroll;
+}
+.right-sidebar {
+  flex: 0 0 180px;
+  padding: 100px 0;
+  background: #c0c0c0;
+}
